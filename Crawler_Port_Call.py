@@ -18,6 +18,7 @@ Port = input("輸入目標港口{'Los Angeles':'87','SHANGHAI':'1325'}")
 Start = datetime.strptime(input('輸入開始日期：%Y-%m-%d'),'%Y-%m-%d')
 End = datetime.strptime(input('輸入結束日期%Y-%m-%d'),'%Y-%m-%d')
 
+Port = {'Los Angeles':'87','SHANGHAI':'1325'} #實際上港口走這
 Days_diff = (End-Start).days + 1
 colNames =   ['Vessel Name','Port Call Type', 'Port Type', 'Port At Call', 'Ata/atd11', 'Time At Port', 'In Transit Port Calls', 'Vessel Type - Detailed', 'Commercial Market']
 groupTime = [0,5,14,50,1000]
